@@ -2,12 +2,12 @@
 
 {
     const images = [
-        "../img/wataten_icon_011.png",
-        "../img/wataten_icon_012.png",
-        "../img/wataten_icon_013.png",
-        "../img/wataten_icon_015.png",
-        "../img/wataten_icon_016.png",
-        "../img/wataten_icon_017.png",
+        "C:\\javascript\\slideShow\\img\\画像1.png",
+        "C:\\javascript\\slideShow\\img\\画像2.png",
+        "C:\\javascript\\slideShow\\img\\画像3.png",
+        "C:\\javascript\\slideShow\\img\\画像4.png",
+        "C:\\javascript\\slideShow\\img\\画像5.png",
+        "C:\\javascript\\slideShow\\img\\画像6.png",
     ];
 
     let currentIndex = 0;
@@ -17,7 +17,7 @@
 
     images.forEach((image,index)=>{
         const img = document.createElement("img");
-        img.src = img;
+        img.src = image;
 
         const li = document.createElement("li")
 
@@ -64,7 +64,7 @@
         timeoutId = setTimeout(()=>{
             next.click();
             playSlideShow();
-        },2000);
+        },1000);
     }
 
     let isPlaying = false;
